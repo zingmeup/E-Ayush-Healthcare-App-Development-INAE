@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@color/wht_grd"
+    android:layout_margin="5dp"
+    android:elevation="5dp"
+    app:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/blood_view_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/less_margin"
+            android:src="@drawable/web_hi_res_512" />
+
+        <TextView
+            android:id="@+id/blood_view_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin"
+            android:text="A +ve Blood Group"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

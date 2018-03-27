@@ -1,0 +1,158 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#08B174"
+    tools:context="com.example.akhil.e_ayush.Fragments.UserProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/update_userName_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="70dp"
+            android:inputType="textPersonName"
+            android:background="@drawable/edittextbg"
+            android:drawableLeft="@mipmap/user96"
+            android:drawablePadding="10dp"
+            android:hint="Name"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/update_email_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/edittextbg"
+            android:drawableLeft="@mipmap/email96"
+            android:drawablePadding="10dp"
+            android:hint="youremail@mail.com"
+            android:inputType="textEmailAddress"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/update_password_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/edittextbg"
+            android:drawableLeft="@mipmap/password96"
+            android:drawablePadding="10dp"
+            android:hint="*******"
+            android:inputType="textPassword"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/update_mobile_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/edittextbg"
+            android:drawableLeft="@mipmap/phone96"
+            android:drawablePadding="10dp"
+            android:hint="Mobile Number"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+        <EditText
+            android:id="@+id/update_family_mobile_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/edittextbg"
+            android:drawableLeft="@mipmap/phone96"
+            android:drawablePadding="10dp"
+            android:hint="Family Mobile Number"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:orientation="horizontal"
+            android:background="@drawable/edittextbg"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Blood Group"
+                android:textSize="@dimen/txt_size"
+                android:textStyle="bold"
+                android:layout_height="match_parent"
+                android:gravity="center"/>
+        <Spinner
+            android:id="@+id/update_blood"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            />
+        </LinearLayout>
+        <LinearLayout
+            android:background="@drawable/edittextbg"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Want to be a blood donor?"/>
+            <RadioGroup
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NO"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/update_register_id"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="60dp"
+            android:elevation="30dp"
+            android:text="Update"
+            android:background="@drawable/buttonbg"
+            android:textAllCaps="false"
+            android:textColor="@color/bgColor"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+</ScrollView>

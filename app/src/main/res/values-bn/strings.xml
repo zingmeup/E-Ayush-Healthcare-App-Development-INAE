@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="welcome">ইয়াশে স্বাগতম!</string>
+    <string name="app_name">ই-আয়ুষ</string>
+    <string name="language_Header">আপনার ভাষা নির্বাচন করুন</string>
+    <string name="confirm">নিশ্চিত করা</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="disclaimer">এই অ্যাপ্লিকেশনটি ব্যবহার করে আপনি আমাদের\nশর্তাবলী এবং গোপনীয়তা নীতির সাথে সম্মত হন</string>
+    <string name="request">দয়া করে সাইন আপ করুন বা আপনার অ্যাকাউন্টে লগইন করুন</string>
+    <string name="log">লগইন</string>
+    <string name="logout_txt">প্রস্থান</string>
+    <string name="lang_txt">ভাষা</string>
+    <string name="healt_care">স্বাস্থ্য সেবা</string>
+    <string name="services">সার্ভিস</string>
+    <string name="log_description">আপনার স্বাস্থ্য জন্য একটি স্টপ গন্তব্য অনাময</string>
+    <string name="email">ইমেল ঠিকানা</string>
+    <string name="password">পাসওয়ার্ড</string>
+    <string name="forget">ভুলে যান?</string>
+    <string name="or">অথবা</string>
+    <string name="sign_up">নিবন্ধন করুন</string>
+    <string name="mob">মোবাইল নম্বর</string>
+    <string name="verify">যাচাই করুন</string>
+    <string name="otp">এক সময় পাসওয়ার্ড লিখুন (OTP)</string>
+    <string name="otp_dis1">এক সময় পাসওয়ার্ড (OTP) আপনার পাঠানো হয়েছে</string>
+    <string name="otp_dis2">নিবন্ধিত মোবাইল নম্বর</string>
+    <string name="location">শহর</string>
+    <string name="navigation_drawer_open">ন্যাভিগেশন ড্রয়ারের খুলুন</string>
+    <string name="navigation_drawer_close">ন্যাভিগেশন ড্রয়ারের বন্ধ করুন</string>
+    <string name="book_appointmnet">বইয়ের \n নিয়োগ</string>
+
+    <string name="emergency">জরুরী অবস্থা</string>
+
+    <string name="quick_aid">দ্রুত \n সাহায্য</string>
+
+    <string name="products_heading">পণ্য</string>
+
+    <string name="first_aid">প্রাথমিক চিকিৎসা</string>
+
+    <string name="medicine">ঔষধ</string>
+
+    <string name="blood_banks">রক্তদান ব্যাংক</string>
+
+    <string name="public_forums">পাবলিক ফোরাম</string>
+
+    <string name="consult_online">কনসালট অনলাইন</string>
+
+    <string name="health_tips">স্বাস্থ্য পরামর্শ</string>
+
+    <string name="appointment">আমার অ্যাপলিকেশন</string>
+    <string name="blood">রক্তের ব্যাংক</string>
+    <string name="skip">লাফালাফি করা</string>
+</resources>

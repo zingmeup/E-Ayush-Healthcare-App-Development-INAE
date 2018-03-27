@@ -1,0 +1,109 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.akhil.e_ayush.Fragments.Appointment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:background="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/appoint_sort"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_margin="1dp"
+                android:background="@color/filter">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="SORT"
+                    android:textColor="@color/white"
+                    android:gravity="right|center"
+                    android:textSize="@dimen/fab_margin"
+                    android:textStyle="bold"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:src="@drawable/filter"
+                    android:layout_width="0dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/appoint_filter"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_margin="1dp"
+                android:background="@color/filter">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="FILTER"
+                    android:textColor="@color/white"
+                    android:gravity="right|center"
+                    android:textSize="@dimen/fab_margin"
+                    android:textStyle="bold"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:src="@drawable/filter"
+                    android:layout_width="0dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/appoint_map"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_margin="1dp"
+                android:background="@color/filter">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="MAP"
+                    android:textColor="@color/white"
+                    android:gravity="right|center"
+                    android:textSize="@dimen/fab_margin"
+                    android:textStyle="bold"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:src="@drawable/maplocation"
+                    android:layout_width="0dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:background="@color/wht_grd_next"
+            android:layout_marginTop="10dp"
+            android:id="@+id/appointment_recycle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</FrameLayout>

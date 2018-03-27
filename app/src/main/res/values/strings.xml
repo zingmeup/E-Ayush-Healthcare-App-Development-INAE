@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">E-AYUSH</string>
+    <string name="language_Header">Select Your Language</string>
+    <string name="confirm">Confirm</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="lang_txt">Language</string>
+    <string name="healt_care">Health Care</string>
+    <string name="services">Services</string>
+    <string name="disclaimer">By using this app you agree to our\nTerms &amp; Conditions and Privacy Policy</string>
+    <string name="welcome">Welcome to eayush!</string>
+    <string name="request">Please, sign up or login to your account</string>
+    <string name="log">Login</string>
+    <string name="logout_txt">Logout</string>
+    <string name="log_description">One stop destination for your Health &amp; Wellness</string>
+    <string name="email">Email Address</string>
+    <string name="password">Password</string>
+    <string name="forget">Forget?</string>
+    <string name="or">or</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="mob">Mobile Number</string>
+    <string name="verify">Verify</string>
+    <string name="otp">Enter One Time Password (OTP)</string>
+    <string name="otp_dis1">One Time Password (OTP) has been sent to your</string>
+    <string name="otp_dis2">Registered mobile number</string>
+    <string name="location">City</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="book_appointmnet">BOOK \n APPOINTMENT</string>
+
+    <string name="emergency">EMERGENCY</string>
+
+    <string name="quick_aid">QUICK \n AID</string>
+
+    <string name="products_heading">PRODUCTS</string>
+
+    <string name="first_aid">FIRST AID</string>
+
+    <string name="medicine">MEDICINE</string>
+
+    <string name="blood_banks">BLOOD BANK</string>
+
+    <string name="public_forums">PUBLIC FORUMS</string>
+
+    <string name="consult_online">CONSULT ONLINE</string>
+
+    <string name="health_tips">HEALTH TIPS</string>
+
+    <string name="appointment">MY APPOINTMENTS</string>
+    <string name="blood">Blood Bank</string>
+    <string name="skip">Skip</string>
+    <string name="title_activity_dashboard">Dashboard</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="appoint_form">Book Your Appointment From Here</string>
+</resources>

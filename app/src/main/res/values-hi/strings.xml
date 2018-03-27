@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ई-आयुष</string>
+    <string name="language_Header">अपनी भाषा का चयन करें</string>
+    <string name="confirm">पुष्टि करें</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="disclaimer">इस ऐप का उपयोग करके आप हमारे नियम एवं शर्तें और गोपनीयता नीति से सहमत हैं</string>
+    <string name="welcome">ई-आयुष में आपका स्वागत है!</string>
+    <string name="request">कृपया, साइन अप करें या अपने खाते में प्रवेश करें</string>
+    <string name="log">लॉग इन करें</string>
+    <string name="log_description">आपके स्वास्थ्य और कल्याण के लिए एक गंतव्य</string>
+    <string name="email">ईमेल पता</string>
+    <string name="password">पारण शब्द</string>
+    <string name="forget">भूल गये?</string>
+    <string name="or">और</string>
+    <string name="sign_up">साइन अप करें</string>
+    <string name="mob">मोबाइल नंबर</string>
+    <string name="verify">सत्यापित करें</string>
+    <string name="otp">एक टाइम पासवर्ड (ओटीपी) दर्ज करें</string>
+    <string name="otp_dis1">वन टाइम पासवर्ड (ओटीपी) भेजा गया है आपके</string>
+    <string name="otp_dis2">पंजीकृत मोबाइल नंबर पर</string>
+</resources>

@@ -1,0 +1,28 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:isScrollContainer="true"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    tools:context="com.example.akhil.e_ayush.Fragments.BloodFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/background"></View>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/blood_frg_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:isScrollContainer="true"
+            android:overScrollMode="never"
+            android:scrollbars="none"></android.support.v7.widget.RecyclerView>
+    </FrameLayout>
+</android.support.v4.widget.NestedScrollView>

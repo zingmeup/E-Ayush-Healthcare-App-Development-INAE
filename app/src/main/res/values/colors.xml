@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="background">#A09FED</color>
+    <color name="white">#FFFFFF</color>
+    <color name="wht_grd">#F7F7F7</color>
+    <color name="wht_grd_next">#e7e4e4</color>
+    <color name="bgColor">#08B174</color>
+    <color name="buttonBg">#F7F7F7</color>
+    <color name="black">#383434</color>
+    <color name="line">#5c4949</color>
+    <color name="light_bg">#C5C5F4</color>
+    <color name="filter">#7F58C2</color>
+    <color name="green">#69B006</color>
+    <color name="bloodColor">#93340d</color>
+</resources>

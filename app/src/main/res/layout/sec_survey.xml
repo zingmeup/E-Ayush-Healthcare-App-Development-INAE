@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wht_grd_next"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Location Information"
+        android:textAllCaps="true"
+        android:textColor="@color/green"
+        android:textSize="@dimen/txt_size" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/edittextbg"
+        android:gravity="center"
+        android:hint="Flat/Room Number"
+        android:inputType="number" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/edittextbg"
+        android:gravity="center"
+        android:hint="Extra Detail"
+        android:inputType="text" />
+
+
+
+    <TextView
+        android:id="@+id/move"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Enter"
+        android:textColor="@color/green"
+        android:textSize="@dimen/txt_size" />
+    <TextView
+        android:id="@+id/siren"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Off Siren"
+        android:textColor="@color/bloodColor"
+        android:textSize="@dimen/txt_size"        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Ambulance is on the way"
+        android:textColor="@color/bloodColor"
+        android:textSize="@dimen/txt_size" />
+
+</LinearLayout>

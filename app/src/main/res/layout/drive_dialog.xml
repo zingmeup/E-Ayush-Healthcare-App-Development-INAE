@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_bg"
+    android:padding="40dp"
+    android:orientation="vertical">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Can You Drive?"
+    android:textSize="20dp"
+    android:gravity="center"
+    android:textColor="@color/bloodColor"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:textStyle="bold"
+    android:layout_marginTop="20dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/drive_no"
+            android:background="@drawable/bloodno"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/carno"
+            android:layout_marginRight="30dp"
+           />
+        <ImageView
+            android:id="@+id/drive_yes"
+            android:layout_width="60dp"
+            android:background="@drawable/bloodyes"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/caryes" />
+
+    </LinearLayout>
+</LinearLayout>

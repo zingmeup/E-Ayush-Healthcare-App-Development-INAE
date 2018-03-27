@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:background="@color/white"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/blood_bank_item5"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="-20dp"
+        android:background="@drawable/bloodyes"
+        android:gravity="center"
+        android:text="Yes"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/blood_bank_item1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Blood bank"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/blood_bank_item2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/blood_bank_item1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/hint_size"
+            android:text="address" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@id/blood_bank_item2">
+        <TextView
+            android:id="@+id/blood_bank_item3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="@dimen/small_txt"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:autoLink="email"
+            android:text="NA" />
+
+        <TextView
+            android:id="@+id/blood_bank_item4"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="@dimen/hint_size"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/blood_bank_item2"
+            android:gravity="end"
+            android:linksClickable="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:autoLink="phone"
+            android:text="NA" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

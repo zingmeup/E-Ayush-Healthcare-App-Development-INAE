@@ -3,6 +3,7 @@ package com.example.akhil.e_ayush.Activities;
 import android.Manifest;
 import android.animation.Animator;
 import android.animation.ObjectAnimator;
+import android.app.Activity;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -73,7 +74,7 @@ import java.util.Random;
 import static android.Manifest.permission.ACCESS_FINE_LOCATION;
 import static android.Manifest.permission.CALL_PHONE;
 
-public class EmergencyActivity extends AppCompatActivity implements GPS.locCallback, FragmentCallbacks, CustomSurveyDialog.Observer, LocDialog.LocObserver {
+public class EmergencyActivity extends Activity implements GPS.locCallback, FragmentCallbacks, CustomSurveyDialog.Observer {
 
     private boolean canDrive = false, havingInternet = false, canSpeak = true;
     private final int PERMISSION_REQUEST_CODE = 100;
@@ -90,40 +91,71 @@ public class EmergencyActivity extends AppCompatActivity implements GPS.locCallb
     private String TAG = "EMER";
     private View progress;
     private final int PERMISSION_REQUEST_CODE_CALL = 200;
+    final Handler handler = new Handler();
+    MediaPlayer mediaPlayer;
+    public boolean flashing=false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_emergency);
-
-        findIds();
-        checkDrive();
+        mediaPlayer = MediaPlayer.create(this, R.raw.buzz);
+        mediaPlayer.setLooping(true);
+       checkDrive();
+       flashing=true;
+       backFlash();
     }
+    public void backFlash(){
 
-    private void findIds() {
-        recyclerView = findViewById(R.id.emergency_recyclerview);
-        progress = findViewById(R.id.emergency_progressbar);
-        progress.setVisibility(View.VISIBLE);
-
-        final Handler handler=new Handler();
+       final View v = findViewById(R.id.frame);
         handler.postDelayed(new Runnable() {
+            boolean red = false;
+            boolean blue = false;
+
             @Override
             public void run() {
-                if(progress.getVisibility()==View.VISIBLE){
-                    if(progress.getAlpha()<1){
-                        progress.setAlpha((float) (progress.getAlpha()+(0.1)));
+                if(flashing){
+                    if (red == false) {
+                        red = true;
+                        blue = false;
+                        v.setBackgroundColor(getResources().getColor(R.color.red));
+                    } else {
+                        blue = true;
+                        red = false;
+                        v.setBackgroundColor(getResources().getColor(R.color.blue));
                     }
-                    else{
-                        progress.setAlpha(0);
-                    }
-                    handler.postDelayed(this,1000);
-                }
-            }
-        },1000);
+                    handler.postDelayed(this, 500);
 
-        recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+                }
+
+            }
+        }, 1000);
     }
+    public void flashHandler(View view){
+        if(flashing){
+            flashing=false;
+        }else {
+            flashing=true;
+            backFlash();
+        }
+    }
+
+    public void alarmHandler(View view){
+        if(mediaPlayer.isPlaying()){
+            mediaPlayer.pause();
+        }else{
+            mediaPlayer.start();
+        }
+    }
+
+    public void callHandler(View view){
+        try{
+            startActivity(new Intent(Intent.ACTION_CALL, Uri.parse("tel:"+"102")));
+        }catch (SecurityException s){
+            Toast.makeText(this, "Permit for calls", Toast.LENGTH_SHORT).show();
+        }
+    }
+
 
     private void setRecyclerView(JSONArray response) {
         for (int i = 0; i < response.length(); i++) {
@@ -292,16 +324,12 @@ public class EmergencyActivity extends AppCompatActivity implements GPS.locCallb
             public void run() {
                 if (customSurveyDialog.isShowing()) {
                     customSurveyDialog.cancel();
-                    secSurvey();
+                    mediaPlayer.start();
                 }
             }
         }, 5000);
     }
 
-    private void secSurvey() {
-        final LocDialog locDialog = new LocDialog(this, this);
-        locDialog.show();
-    }
 
     private void buzzer() {
 
@@ -463,11 +491,7 @@ public class EmergencyActivity extends AppCompatActivity implements GPS.locCallb
 
     @Override
     public void response() {
-        secSurvey();
-    }
 
-    @Override
-    public void locCallback() {
-        buzzer();
     }
 }
+

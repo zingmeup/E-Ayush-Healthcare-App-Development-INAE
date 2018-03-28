@@ -1,26 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context="com.example.akhil.e_ayush.Activities.EmergencyActivity">
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/frame">
 
-    <android.support.v7.widget.RecyclerView
-        android:clipChildren="false"
-        android:visibility="gone"
-        android:clipToPadding="false"
-        android:background="@color/wht_grd_next"
-        android:layout_marginTop="10dp"
-        android:id="@+id/emergency_recyclerview"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/emergency_progressbar"
-        android:layout_gravity="center"
-        android:background="@color/bloodColor"
-        />
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@color/white">
 
-</FrameLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="We are on the way"
+                android:textSize="35sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Where are you?"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Room no/Flat no/Landmark"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anything else?"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Let us know more in meantime.."/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SEND"
+                android:layout_gravity="center"
+                android:background="@drawable/emergency_control_shape"
+                android:backgroundTint="#b6ffad"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_margin="2dp">
+
+                <ImageButton
+                    android:layout_margin="2dp"
+                    android:layout_width="@dimen/emegency_controlbtn"
+                    android:layout_height="@dimen/emegency_controlbtn"
+                    android:src="@drawable/ic_menu_camera"
+                    android:background="@drawable/emergency_control_shape"
+                    android:backgroundTint="#fad4ef"/>
+
+                <ImageButton
+                    android:layout_margin="2dp"
+                    android:layout_width="@dimen/emegency_controlbtn"
+                    android:layout_height="@dimen/emegency_controlbtn"
+                    android:src="@drawable/ic_microphone_black_shape"
+                    android:background="@drawable/emergency_control_shape"
+                    android:backgroundTint="#d4ffd4" />
+
+
+                <ImageButton
+                    android:layout_margin="2dp"
+                    android:layout_width="@dimen/emegency_controlbtn"
+                    android:layout_height="@dimen/emegency_controlbtn"
+                    android:onClick="alarmHandler"
+                    android:src="@drawable/ic_icon"
+                    android:background="@drawable/emergency_control_shape"
+                    android:backgroundTint="#c4c4c4" />
+
+                <ImageButton
+                    android:layout_margin="2dp"
+                    android:layout_width="@dimen/emegency_controlbtn"
+                    android:layout_height="@dimen/emegency_controlbtn"
+                    android:onClick="callHandler"
+                    android:src="@drawable/ic_phone_receiver"
+                    android:background="@drawable/emergency_control_shape"
+                    android:backgroundTint="#ffd0d0" />
+
+                <ImageButton
+                    android:layout_margin="2dp"
+                    android:layout_width="@dimen/emegency_controlbtn"
+                    android:layout_height="@dimen/emegency_controlbtn"
+                    android:onClick="flashHandler"
+                    android:src="@drawable/ic_lantern"
+                    android:background="@drawable/emergency_control_shape"
+                    android:backgroundTint="#dfc6ff" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>
+</LinearLayout>
